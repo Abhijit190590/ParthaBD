@@ -157,6 +157,7 @@
 	  </div>
 </body>
 <script>
+	let audio = document.querySelector("audio");
     let datetxt = "21 March 2005";
     let datatxtletter = "My brother, you are a truly special person. I always silently thank you for being a part of my life. Today, I wish you all the best—good health, happiness, and success. I hope we get to celebrate many more birthdays together. Happy birthday to you! 🎉💙";
     let titleLetter = "To you";
@@ -226,6 +227,7 @@
                 }
             },50)
         },6000)
+	    audio.play();
     })
     $(".close").on("click", function(){
         clearInterval(intervalContent)
